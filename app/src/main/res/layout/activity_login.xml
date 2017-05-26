@@ -28,5 +28,20 @@
         android:text="@string/txt_senha"
         android:id="@+id/tvSenha"
         android:layout_below="@+id/etLogin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSenha"
+        android:layout_below="@+id/tvSenha"
+        android:hint="@string/hint_senha"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etSenha"
+        android:id="@+id/button"
+        android:onClick="logar"
+        android:text="@string/botao_login"/>
 </RelativeLayout>
